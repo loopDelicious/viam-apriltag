@@ -1,0 +1,7 @@
+
+viam-sdk==0.34.0
+apriltag
+numpy
+opencv-python
+pillow
+typing-extensions

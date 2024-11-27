@@ -1,0 +1,12 @@
+{
+  "module_name": "vision",
+  "namespace": "joyce",
+  "language": "python",
+  "resource_type": "service",
+  "resource_subtype": "vision",
+  "model_name": "apriltag",
+  "enable_cloud_build": false,
+  "initialize_git": false,
+  "generator_version": "0.1.0",
+  "generated_on": "2024-11-26T18:07:57.620574Z"
+}

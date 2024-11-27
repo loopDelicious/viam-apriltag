@@ -1,0 +1,15 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "joyce:vision",
+  "visibility": "private",
+  "url": "",
+  "description": "Modular vision service: apriltag",
+  "models": [
+    {
+      "api": "rdk:service:vision",
+      "model": "joyce:vision:apriltag"
+    }
+  ],
+  "entrypoint": "./run.sh",
+  "first_run": ""
+}
