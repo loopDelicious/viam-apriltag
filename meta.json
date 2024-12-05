@@ -1,8 +1,8 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
-  "module_id": "joyce:vision",
-  "visibility": "private",
-  "url": "",
+  "module_id": "joyce:apriltag",
+  "visibility": "public",
+  "url": "https://github.com/loopDelicious/viam-apriltag",
   "description": "Modular vision service: apriltag",
   "models": [
     {
@@ -10,6 +10,5 @@
       "model": "joyce:vision:apriltag"
     }
   ],
-  "entrypoint": "./run.sh",
-  "first_run": ""
+  "entrypoint": "run.sh"
 }
