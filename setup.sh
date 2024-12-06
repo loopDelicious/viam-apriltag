@@ -29,6 +29,26 @@ if ! python3 -m venv $VENV_NAME >/dev/null 2>&1; then
     fi
 fi
 
+# check if cmake is available, otherwise install
+if ! command -v cmake >/dev/null; then
+    echo "CMake not found, attempting to install."
+    if command -v apt-get >/dev/null; then
+        echo "Detected Debian/Ubuntu, attempting to install cmake automatically."
+        SUDO="sudo"
+        if ! command -v $SUDO >/dev/null; then
+            SUDO=""
+        fi
+        $SUDO apt install -qqy cmake >/dev/null 2>&1
+        if ! command -v cmake >/dev/null; then
+            echo "Failed to install cmake. Please install it manually."
+            exit 1
+        fi
+    else
+        echo "CMake not found. Please install it manually."
+        exit 1
+    fi
+fi
+
 # remove -U if viam-sdk should not be upgraded whenever possible
 # -qq suppresses extraneous output from pip
 echo "Virtualenv found/created. Installing/upgrading Python packages..."
