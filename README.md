@@ -1,6 +1,6 @@
 ## To run on Viam
 
-Follow step-by-step instructions in this tutorial: 
+Follow step-by-step instructions [in this codelab](https://codelabs.viam.com/guide/apriltag/index.html?index=..%2F..index#0)
 
 ### AprilTag detection
 
